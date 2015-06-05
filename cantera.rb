@@ -9,6 +9,13 @@ class Cantera < Formula
     sha1 "b6e4226f27075ffb8686a24661be79d6d3ff9888"
   end
 
+  # Include changes to be included in the next 2.2.x maintenance release
+  devel do
+    url 'https://github.com/cantera/cantera.git', :branch => '2.2'
+    version '2.2.x'
+
+  end
+
   option "with-matlab=", "Path to Matlab root directory"
   option "without-check", "Disable build-time checking (not recommended)"
 
